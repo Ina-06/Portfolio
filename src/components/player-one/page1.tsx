@@ -66,9 +66,11 @@ export function Page1({ sectionRef }: { sectionRef: RefObject<HTMLElement | null
       <div className="absolute inset-0 z-[2] overflow-hidden border-4 border-ink bg-cream shadow-[6px_6px_0_#141414] [backface-visibility:hidden]">
         <DotOverlay />
 
-        <div className="relative grid h-full grid-rows-[auto_1fr] gap-[18px] py-[26px] px-[30px]">
-          <div className="flex min-h-[130px] items-end justify-between border-b-4 border-ink pb-2.5 pl-[172px]">
-            <h1 className="m-0 font-bangers text-[46px] tracking-wide text-ink">WHERE I AM NOW</h1>
+        <div className="relative grid h-full grid-rows-[auto_1fr] gap-[18px] py-5 px-4 book:gap-[18px] book:py-[26px] book:px-[30px]">
+          <div className="flex flex-col gap-2 border-b-4 border-ink pb-3 book:min-h-[130px] book:flex-row book:items-end book:justify-between book:gap-0 book:pb-2.5 book:pl-[172px]">
+            <h1 className="m-0 font-bangers text-[32px] tracking-wide text-ink book:text-[46px]">
+              WHERE I AM NOW
+            </h1>
             <div className="font-press text-[10px] text-ink opacity-65">
               PLAYER ONE — IBRAHIM ARAJI · PAGE 01
             </div>
@@ -77,7 +79,7 @@ export function Page1({ sectionRef }: { sectionRef: RefObject<HTMLElement | null
           <div
             data-cols="1fr 1fr"
             data-rows="minmax(0, 1fr)"
-            className="grid min-h-0 grid-cols-[1fr_1fr] auto-rows-[minmax(0,1fr)] gap-[26px_30px]"
+            className="grid min-h-0 grid-cols-[1fr_1fr] auto-rows-[minmax(0,1fr)] gap-5 book:gap-[26px_30px]"
           >
             {/* Panel 01 — Level: University */}
             <div className="relative -rotate-1 border-4 border-ink bg-tan shadow-[6px_6px_0_#141414]">
@@ -228,7 +230,7 @@ export function Page1({ sectionRef }: { sectionRef: RefObject<HTMLElement | null
             {/* Panel 04 — Party Members */}
             <div className="relative -rotate-[0.7deg] border-4 border-ink bg-tan p-[22px] px-3.5 pb-3.5">
               <PanelTag className="left-3.5 top-[-14px]">PANEL 04 — PARTY MEMBERS</PanelTag>
-              <div className="mt-1.5 grid grid-cols-[126px_126px] justify-center gap-2.5">
+              <div className="mt-1.5 grid grid-cols-2 justify-center gap-2.5 book:grid-cols-[126px_126px]">
                 {PARTY_MEMBERS.map((m) => (
                   <div
                     key={m.src}
@@ -240,7 +242,13 @@ export function Page1({ sectionRef }: { sectionRef: RefObject<HTMLElement | null
                       style={{ background: m.tabTint }}
                     />
                     <div className="relative aspect-[4/5] w-full overflow-hidden border-[3px] border-ink bg-tan-dark">
-                      <Image src={m.src} alt={m.alt} fill sizes="126px" className="object-cover" />
+                      <Image
+                        src={m.src}
+                        alt={m.alt}
+                        fill
+                        sizes="(max-width: 900px) 45vw, 126px"
+                        className="object-cover"
+                      />
                     </div>
                     <div className="py-1.5 pb-1.5 text-center font-bangers text-[17px] text-ink">
                       {m.caption}

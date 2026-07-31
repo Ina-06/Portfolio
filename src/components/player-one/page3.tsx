@@ -34,28 +34,30 @@ export function Page3({
           }}
         />
 
-        <div className="relative grid h-full grid-rows-[auto_auto_1fr] gap-3.5 pt-[26px] px-[30px] pb-[18px]">
-          <div className="flex min-h-[130px] items-end justify-between border-b-4 border-ink pb-2.5 pl-[172px]">
-            <h2 className="m-0 font-bangers text-[46px] tracking-wide text-ink">NEXT LEVEL</h2>
+        <div className="relative grid h-full grid-rows-[auto_auto_1fr] gap-3.5 pt-5 px-4 pb-4 book:pt-[26px] book:px-[30px] book:pb-[18px]">
+          <div className="flex flex-col gap-2 border-b-4 border-ink pb-3 book:min-h-[130px] book:flex-row book:items-end book:justify-between book:gap-0 book:pb-2.5 book:pl-[172px]">
+            <h2 className="m-0 font-bangers text-[32px] tracking-wide text-ink book:text-[46px]">
+              NEXT LEVEL
+            </h2>
             <div className="font-press text-[10px] text-ink opacity-65">
               WHERE I&apos;VE BEEN → WHAT I BUILT → WHERE I&apos;M GOING
             </div>
           </div>
 
           {/* Band 1 — Work History */}
-          <div className="relative border-4 border-ink bg-tan px-[18px] py-4">
+          <div className="relative border-4 border-ink bg-tan px-4 py-4 book:px-[18px]">
             <PanelTag className="right-4 top-[-14px]">BAND 1 — WORK HISTORY</PanelTag>
 
-            <div className="relative mt-2 grid grid-cols-[1fr_1fr_1fr_320px] items-start gap-0">
+            <div className="relative mt-2 grid grid-cols-1 gap-4 book:grid-cols-[1fr_1fr_1fr_320px] book:items-start book:gap-0">
               <div
                 aria-hidden="true"
-                className="absolute right-[30%] top-[26px] left-[8%] h-2"
+                className="absolute right-[30%] top-[26px] left-[8%] hidden h-2 book:block"
                 style={{
                   backgroundImage:
                     "repeating-linear-gradient(to right, #141414 0 10px, transparent 10px 16px)",
                 }}
               />
-              <div className="absolute left-[8%] top-[168px] flex h-[22px] w-[22%] items-center justify-center border-[3px] border-dashed border-teal bg-[rgba(43,179,192,0.07)] font-press text-[8px] text-teal">
+              <div className="absolute left-[8%] top-[168px] hidden h-[22px] w-[22%] items-center justify-center border-[3px] border-dashed border-teal bg-[rgba(43,179,192,0.07)] font-press text-[8px] text-teal book:flex">
                 AUB — FULL COURSE LOAD
               </div>
 
@@ -88,13 +90,13 @@ export function Page3({
               </button>
 
               <div className="relative z-[3]">
-                <div className="absolute left-[-34px] top-[-14px] animate-[po-flash_1.4s_steps(2)_infinite] -rotate-[7deg] border-4 border-ink bg-yellow px-2 font-bangers text-[30px] text-ink shadow-[4px_4px_0_#141414]">
+                <div className="relative z-[1] mb-2 inline-block -rotate-[7deg] animate-[po-flash_1.4s_steps(2)_infinite] border-4 border-ink bg-yellow px-2 font-bangers text-[24px] text-ink shadow-[4px_4px_0_#141414] book:absolute book:left-[-34px] book:top-[-14px] book:mb-0 book:text-[30px]">
                   PROMOTED!
                 </div>
                 <button
                   type="button"
                   onClick={() => onSelectNode(2)}
-                  className="relative mt-[26px] cursor-pointer border-0 bg-transparent p-0 text-left"
+                  className="relative block cursor-pointer border-0 bg-transparent p-0 text-left book:mt-[26px]"
                 >
                   <span className="mb-2 flex items-center gap-2">
                     <span
@@ -111,10 +113,10 @@ export function Page3({
                 </button>
               </div>
 
-              <div className="relative z-[2] ml-[18px] border-4 border-ink bg-ink px-4 py-3 pb-3.5 shadow-[7px_7px_0_#FFC93C]">
+              <div className="relative z-[2] border-4 border-ink bg-ink px-4 py-3 pb-3.5 shadow-[7px_7px_0_#FFC93C] book:ml-[18px]">
                 <div className="flex items-start gap-1">
                   <div
-                    className="font-bangers text-[104px] leading-[0.74] text-yellow"
+                    className="font-bangers text-[72px] leading-[0.74] text-yellow book:text-[104px]"
                     style={{ textShadow: "5px 5px 0 #E8453C" }}
                   >
                     ~75%
@@ -157,7 +159,7 @@ export function Page3({
             {/* Band 2 — Built So Far */}
             <div className="relative border-4 border-ink bg-tan px-[18px] py-4">
               <PanelTag className="left-4 top-[-14px]">BAND 2 — BUILT SO FAR</PanelTag>
-              <div className="mt-2 grid grid-cols-2 gap-3.5">
+              <div className="mt-2 grid grid-cols-1 gap-3.5 book:grid-cols-2">
                 <div className="flex flex-col border-4 border-ink bg-cream shadow-[6px_6px_0_#141414] transition-transform duration-150 hover:-translate-y-1 hover:-rotate-2 hover:shadow-[10px_10px_0_#141414]">
                   <div className="flex items-center justify-between border-b-4 border-ink bg-red px-2.5 py-2">
                     <span className="font-bangers text-[26px] leading-none text-cream">UNITOK</span>

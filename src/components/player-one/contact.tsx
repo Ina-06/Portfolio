@@ -35,22 +35,25 @@ export function Contact({
       className="absolute inset-0 z-[1] overflow-hidden border-4 border-teal bg-void shadow-[6px_6px_0_#141414]"
     >
       <DotOverlay color="#2BB3C0" size={6} />
-      <div className="relative grid h-full grid-rows-[auto_1fr_auto] p-[26px] px-[34px] pb-5">
-        <div className="flex min-h-[112px] items-end justify-between border-b-4 border-teal pb-3 pl-[176px]">
+      <div className="relative grid h-full grid-rows-[auto_1fr_auto] p-4 pb-4 book:p-[26px] book:px-[34px] book:pb-5">
+        <div className="flex flex-col gap-1.5 border-b-4 border-teal pb-3 book:min-h-[112px] book:flex-row book:items-end book:justify-between book:gap-0 book:pl-[176px]">
           <div className="whitespace-nowrap font-press text-xs text-teal">HIGH SCORE ENTRY</div>
           <div className="animate-[po-blink_1.1s_steps(1)_infinite] font-press text-xs text-yellow">
             INSERT COIN TO CONTINUE
           </div>
         </div>
 
-        <div data-cols="1fr 1fr" className="grid grid-cols-2 items-center gap-[34px] py-[18px]">
+        <div
+          data-cols="1fr 1fr"
+          className="grid grid-cols-2 items-center gap-6 py-5 book:gap-[34px] book:py-[18px]"
+        >
           <div>
-            <h2 className="m-0 mb-1.5 font-bangers text-[62px] leading-[0.92] tracking-wide text-cream">
+            <h2 className="m-0 mb-1.5 font-bangers text-[40px] leading-[0.92] tracking-wide text-cream book:text-[62px]">
               SAY SOMETHING,
               <br />
               <span className="text-red">PLAYER TWO.</span>
             </h2>
-            <p className="m-0 mb-5 max-w-[46ch] text-[21px] leading-[1.35] text-cream opacity-80">
+            <p className="m-0 mb-5 max-w-[46ch] text-[19px] leading-[1.35] text-cream opacity-80 book:text-[21px]">
               Internships, freelance work, or a question about anything on these pages. I answer
               everything.
             </p>
@@ -179,7 +182,7 @@ export function Contact({
                 className="animate-[po-up_0.3s_steps(3)] border-4 border-yellow bg-[rgba(255,201,60,0.08)] p-6 px-6 py-10 text-center shadow-[6px_6px_0_#141414]"
               >
                 <div
-                  className="font-bangers text-[58px] leading-[0.95] text-yellow"
+                  className="font-bangers text-[40px] leading-[0.95] text-yellow book:text-[58px]"
                   style={{ textShadow: "4px 4px 0 #E8453C" }}
                 >
                   NEW HIGH SCORE!
@@ -207,17 +210,17 @@ export function Contact({
           </div>
         </div>
 
-        <div className="flex items-end justify-between border-t-4 border-teal pt-3">
-          <div className="font-press text-[10px] text-cream opacity-50">
+        <div className="flex flex-col items-start gap-3 border-t-4 border-teal pt-3 book:flex-row book:items-end book:justify-between">
+          <div className="order-2 font-press text-[10px] text-cream opacity-50 book:order-1">
             © IBRAHIM ARAJI — PLAYER ONE
           </div>
-          <div className="flex items-end gap-3.5">
-            <div className="border-4 border-ink bg-red px-3 py-0.5 font-bangers text-2xl text-cream shadow-[4px_4px_0_#141414]">
+          <div className="order-1 flex items-center gap-3 book:order-2 book:items-end book:gap-3.5">
+            <div className="border-4 border-ink bg-red px-3 py-0.5 font-bangers text-lg text-cream shadow-[4px_4px_0_#141414] book:text-2xl">
               SEE YOU IN THE NEXT LEVEL!
             </div>
             <div
               aria-hidden="true"
-              className="h-[74px] w-[74px] overflow-hidden border-4 border-cream bg-void"
+              className="h-[56px] w-[56px] flex-none overflow-hidden border-4 border-cream bg-void book:h-[74px] book:w-[74px]"
             >
               <Sprite frame={2} label="Pixel-art portrait of Ibrahim Araji waving" />
             </div>

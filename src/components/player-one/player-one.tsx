@@ -95,13 +95,13 @@ export function PlayerOne() {
         bookRef.current.style.flexDirection = "column";
         bookRef.current.style.gap = "28px";
       }
-      [...pages, contactRef.current].forEach((p) => {
+      [...pages, contactRef.current].forEach((p, i) => {
         if (!p) return;
         p.style.position = "relative";
         p.style.inset = "auto";
         p.style.transform = "none";
         p.style.height = "auto";
-        p.style.order = p === contactRef.current ? "4" : "";
+        p.style.order = String(i + 1);
         const front = p.firstElementChild as HTMLElement | null;
         if (front && p !== contactRef.current) {
           front.style.position = "relative";
