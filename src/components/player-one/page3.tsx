@@ -150,6 +150,11 @@ export function Page3({
                     <strong>SWFLBot</strong> — WhatsApp Business Cloud API tool with a custom GUI,
                     shipped as a standalone Windows executable, 150+ test suite
                   </li>
+                  <li>
+                    <strong>SWFL Closing App</strong> — real-time Next.js/Firebase platform
+                    replacing the paper tracking sheet and WhatsApp updates with one flow from
+                    opening dispatch to end-of-day closing
+                  </li>
                 </ul>
               )}
             </div>
@@ -159,15 +164,47 @@ export function Page3({
             {/* Band 2 — Built So Far */}
             <div className="relative border-4 border-ink bg-tan px-[18px] py-4">
               <PanelTag className="left-4 top-[-14px]">BAND 2 — BUILT SO FAR</PanelTag>
-              <div className="mt-2 grid grid-cols-1 gap-3.5 book:grid-cols-2">
+              <div className="mt-2 grid grid-cols-1 gap-3.5 book:grid-cols-3">
                 <div className="flex flex-col border-4 border-ink bg-cream shadow-[6px_6px_0_#141414] transition-transform duration-150 hover:-translate-y-1 hover:-rotate-2 hover:shadow-[10px_10px_0_#141414]">
+                  <div className="flex items-center justify-between border-b-4 border-ink bg-yellow px-2.5 py-2">
+                    <span className="font-bangers text-[26px] leading-none text-ink">
+                      SWFL CLOSING APP
+                    </span>
+                    <a
+                      href="https://closing-swfl.vercel.app"
+                      target="_blank"
+                      rel="noopener"
+                      aria-label="SWFL Closing App live site"
+                      className="block h-5 w-5 flex-none border-[3px] border-ink"
+                    />
+                  </div>
+                  <div className="flex-1 px-2.5 py-[9px]">
+                    <div className="mb-1.5 font-press text-[8px] text-ink opacity-70">
+                      REAL-TIME DISPATCH PLATFORM
+                    </div>
+                    <div className="text-[19px] leading-[1.25] text-ink">
+                      One integrated flow from opening dispatch to end-of-day closing: a desktop
+                      dispatcher view, a phone-first closer view with live driver cards sorted by
+                      ETA, and auto-generated end-of-day PDF and Excel reports.
+                    </div>
+                  </div>
+                  <div className="flex flex-wrap gap-[5px] border-t-4 border-ink bg-ink p-[7px]">
+                    {["NEXT.JS", "TYPESCRIPT", "TAILWIND", "FIREBASE"].map((tag) => (
+                      <span key={tag} className="font-press text-[7px] text-yellow">
+                        {tag}
+                      </span>
+                    ))}
+                  </div>
+                </div>
+
+                <div className="flex flex-col border-4 border-ink bg-cream shadow-[6px_6px_0_#141414] transition-transform duration-150 hover:-translate-y-1 hover:rotate-2 hover:shadow-[10px_10px_0_#141414]">
                   <div className="flex items-center justify-between border-b-4 border-ink bg-red px-2.5 py-2">
                     <span className="font-bangers text-[26px] leading-none text-cream">UNITOK</span>
                     <a
-                      href="https://github.com/Ina-06"
+                      href="https://unitok.app"
                       target="_blank"
                       rel="noopener"
-                      aria-label="UniTok on GitHub"
+                      aria-label="UniTok live site"
                       className="block h-5 w-5 border-[3px] border-cream"
                     />
                   </div>
@@ -205,13 +242,13 @@ export function Page3({
                   </div>
                 </div>
 
-                <div className="flex flex-col border-4 border-ink bg-cream shadow-[6px_6px_0_#141414] transition-transform duration-150 hover:-translate-y-1 hover:rotate-2 hover:shadow-[10px_10px_0_#141414]">
+                <div className="flex flex-col border-4 border-ink bg-cream shadow-[6px_6px_0_#141414] transition-transform duration-150 hover:-translate-y-1 hover:-rotate-2 hover:shadow-[10px_10px_0_#141414]">
                   <div className="flex items-center justify-between border-b-4 border-ink bg-teal px-2.5 py-2">
                     <span className="font-bangers text-[26px] leading-none text-ink">
                       CONNECT FOUR AI
                     </span>
                     <a
-                      href="https://github.com/Ina-06"
+                      href="https://github.com/Ina-06/Connect4KHI"
                       target="_blank"
                       rel="noopener"
                       aria-label="Connect Four AI on GitHub"
@@ -245,9 +282,9 @@ export function Page3({
                 <PanelTag className="left-3.5 top-[-14px]">NEXT OBJECTIVES</PanelTag>
                 <ul className="m-0 mt-1.5 flex list-none flex-col gap-3 p-0">
                   {[
-                    "Land a software engineering internship",
-                    "Work in frontend design & frontend development",
-                    "Ship something real that people actually use",
+                    "Master's in Applied Computing (MScAC) at the University of Toronto",
+                    "Apply optimization and machine learning to logistics and operations",
+                    "Turn the tools I've built into products other teams depend on",
                   ].map((item) => (
                     <li key={item} className="flex items-start gap-2.5">
                       <span
@@ -279,15 +316,17 @@ export function Page3({
                     className="font-bangers text-[36px] leading-[0.95] text-cream"
                     style={{ textShadow: "4px 4px 0 #E8453C" }}
                   >
-                    BREAK INTO BIG TECH.
+                    BUILD AI-POWERED SYSTEMS
                   </div>
                   <div
                     className="mt-1 font-bangers text-[36px] leading-[0.95] text-yellow"
                     style={{ textShadow: "4px 4px 0 #141414" }}
                   >
-                    THEN: CYBER SECURITY.
+                    FOR LOGISTICS.
                   </div>
-                  <div className="mt-2 font-press text-[9px] text-teal">GO WHERE THE STAKES ARE</div>
+                  <div className="mt-2 font-press text-[9px] text-teal">
+                    AT AN INDUSTRY TEAM OR MY OWN COMPANY
+                  </div>
                 </div>
               </div>
             </div>

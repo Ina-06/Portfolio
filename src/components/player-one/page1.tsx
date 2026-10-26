@@ -100,7 +100,7 @@ export function Page1({ sectionRef }: { sectionRef: RefObject<HTMLElement | null
                   LEVEL: UNIVERSITY
                 </div>
                 <p className="m-0 mb-2.5 text-[20px] leading-[1.28] text-ink">
-                  Third year, full course load, still shipping side projects at 2am. Currently
+                  Final year, full course load, still shipping side projects at 2am. Currently
                   grinding CS at AUB.
                 </p>
                 <div className="border-4 border-ink bg-cream px-3.5 py-2.5 text-[19px] leading-[1.32] text-ink">
@@ -114,12 +114,16 @@ export function Page1({ sectionRef }: { sectionRef: RefObject<HTMLElement | null
                     CLASS OF ...... <strong>SPRING 2027</strong>
                   </div>
                   <div className="mt-1">START ......... SEPT 2023</div>
+                  <div className="mt-1">
+                    UP NEXT ....... SPRING 2027: Machine Learning, Theory of Computation, Cyber
+                    Security, Programming Languages
+                  </div>
                 </div>
                 <div className="my-2.5 font-press text-[9px] text-ink">FOCUS — EQUIPPED SKILLS</div>
                 <div className="grid grid-cols-2 gap-2">
                   <div className="flex items-center gap-2 text-[19px] text-ink">
                     <span aria-hidden="true" className="h-3.5 w-3.5 flex-none border-[3px] border-ink bg-teal" />
-                    FRONTEND DESIGN / UI-UX
+                    AUTOMATION ENGINEERING
                   </div>
                   <div className="flex items-center gap-2 text-[19px] text-ink">
                     <span
@@ -130,7 +134,7 @@ export function Page1({ sectionRef }: { sectionRef: RefObject<HTMLElement | null
                   </div>
                   <div className="flex items-center gap-2 text-[19px] text-ink">
                     <span aria-hidden="true" className="h-3.5 w-3.5 flex-none rotate-45 border-[3px] border-ink bg-teal" />
-                    DEPLOYMENT ENGINEERING
+                    DATA &amp; OPERATIONS ANALYSIS
                   </div>
                   <div className="flex items-center gap-2 text-[19px] text-ink">
                     <span
@@ -140,7 +144,7 @@ export function Page1({ sectionRef }: { sectionRef: RefObject<HTMLElement | null
                         backgroundImage: "repeating-linear-gradient(45deg, #2BB3C0 0 3px, #141414 3px 6px)",
                       }}
                     />
-                    SYSTEMS ENGINEERING
+                    FRONTEND DESIGN / UI-UX
                   </div>
                 </div>
               </div>

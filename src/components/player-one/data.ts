@@ -14,12 +14,12 @@ export const NODES: TimelineNode[] = [
   {
     title: "NODE 02 — SWIFTFORCE LOGISTICS (SWFL)",
     meta: "DISPATCHER, FULL-TIME · REMOTE, U.S.-BASED · OCT 2025",
-    body: "Primary point of contact for on-road drivers. Real-time route coordination, driver check-ins, route completions.",
+    body: "Primary point of contact for 40+ on-road drivers per shift. Real-time route coordination, driver check-ins, route completions. Coached Amazon delivery associates on vehicle-inspection (DVIC) compliance, using Python/pandas to flag inspections completed in under 90 seconds.",
   },
   {
     title: "NODE 03 — SWIFTFORCE LOGISTICS (SWFL)",
     meta: "AUTOMATION ENGINEER INTERN · REMOTE, U.S.-BASED · PRESENT",
-    body: "Promoted off the dispatch floor to build tooling for the team I had been working on. Two production Python systems, running daily.",
+    body: "Promoted off the dispatch floor to build tooling for the team I had been working on. Two production Python systems and a full-stack web platform, running daily.",
     list: true,
   },
 ];
