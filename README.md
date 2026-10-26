@@ -4,9 +4,6 @@ An interactive comic-book / arcade portfolio. Scroll to turn the pages of a 3D b
 
 **Live:** [ibrahimaraji.netlify.app](https://ibrahimaraji.netlify.app)
 
-<!-- TODO: add a screenshot of the cover or Page 03, e.g. docs/screenshot.png -->
-![Portfolio screenshot](docs/screenshot.png)
-
 ## Features
 
 - **Scroll-driven page flips:** each scroll step turns a page of a 3D book with CSS perspective transforms.
