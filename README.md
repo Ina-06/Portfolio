@@ -1,36 +1,40 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Player One: Ibrahim Araji's Portfolio
 
-## Getting Started
+An interactive comic-book / arcade portfolio. Scroll to turn the pages of a 3D book that tells my story, from where I am now, through how it started, to what I've built and where I'm going.
 
-First, run the development server:
+**Live:** [ibrahimaraji.netlify.app](https://ibrahimaraji.netlify.app)
+
+<!-- TODO: add a screenshot of the cover or Page 03, e.g. docs/screenshot.png -->
+![Portfolio screenshot](docs/screenshot.png)
+
+## Features
+
+- **Scroll-driven page flips:** each scroll step turns a page of a 3D book with CSS perspective transforms.
+- **Arcade intro:** an "Insert Coin" loading screen with a pixel-art avatar.
+- **Interactive work timeline:** click a node to read that role's details.
+- **Responsive layout:** below 900px the book flattens into a single scrolling column for phones.
+- **Working contact form:** a Next.js route handler sends messages through Resend.
+
+## Tech stack
+
+Next.js 16 (App Router) · React 19 · TypeScript · Tailwind CSS v4 · Resend · Netlify
+
+## Run it locally
 
 ```bash
+git clone https://github.com/Ina-06/Portfolio.git
+cd Portfolio
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open http://localhost:3000.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+The contact form needs a [Resend](https://resend.com) API key. Create `.env.local` with:
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+```bash
+RESEND_API_KEY=your_key
+CONTACT_TO_EMAIL=you@example.com
+```
 
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+The rest of the site works without it.
