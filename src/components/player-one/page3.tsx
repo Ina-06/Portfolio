@@ -178,11 +178,27 @@ export function Page3({
                       className="block h-5 w-5 flex-none border-[3px] border-ink"
                     />
                   </div>
-                  <div className="flex-1 px-2.5 py-[9px]">
+                  <div className="flex-1 px-2.5 py-2">
+                    <div className="mb-2 border-4 border-ink bg-ink p-1 pb-[5px] shadow-[4px_4px_0_#2BB3C0]">
+                      <div className="relative aspect-[872/380] w-full overflow-hidden bg-void-2">
+                        <Image
+                          src="/assets/p3-closing-01.jpg"
+                          alt="The SWFL Closing App sign-in screen: “Tonight’s closing sheet” heading above the station access-key field"
+                          fill
+                          sizes="(max-width: 900px) 100vw, 500px"
+                          className="object-cover"
+                        />
+                      </div>
+                      <div className="flex items-center justify-center gap-[5px] pt-[5px]">
+                        <span aria-hidden="true" className="h-1 w-[22px] bg-teal" />
+                        <span className="font-press text-[6px] text-teal">LIVE BUILD</span>
+                        <span aria-hidden="true" className="h-1 w-[22px] bg-teal" />
+                      </div>
+                    </div>
                     <div className="mb-1.5 font-press text-[8px] text-ink opacity-70">
                       REAL-TIME DISPATCH PLATFORM
                     </div>
-                    <div className="text-[19px] leading-[1.25] text-ink">
+                    <div className="text-[18px] leading-[1.2] text-ink">
                       One integrated flow from opening dispatch to end-of-day closing: a desktop
                       dispatcher view, a phone-first closer view with live driver cards sorted by
                       ETA, and auto-generated end-of-day PDF and Excel reports.
